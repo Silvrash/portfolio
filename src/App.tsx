@@ -115,6 +115,9 @@ const Root = styled.div`
 
         @media (max-width: 768px) {
             padding: 0.5rem 2.125rem 0.5rem;
+            .row {
+                width: 83% !important;
+            }
         }
     }
 
@@ -145,7 +148,6 @@ const Root = styled.div`
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
-            width: 83%;
         }
 
         @media (max-width: 768px) {
@@ -153,6 +155,10 @@ const Root = styled.div`
             width: 100%;
             align-items: flex-start;
             flex-direction: column;
+
+            .row {
+                width: 100%;
+            }
         }
     }
 
