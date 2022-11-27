@@ -17,7 +17,7 @@ const data = {
             <span>architecting codebases</span> and <span>code optimizations</span>.
         </>
     ),
-    resumeLink: "",
+    resumeLink: "https://github.com/Silvrash/cv/raw/main/example/cv.pdf",
     skills: {
         g1: ["Typescript", "Python", "NodeJS", "ReactJS", "GraphQL"],
         g2: ["Javascript", "Flask", "Express", "React-Native", "MySQL"],
