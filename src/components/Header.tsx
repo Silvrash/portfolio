@@ -24,9 +24,9 @@ const Header: React.FC = () => {
             <MenuItem number={"01"} link="#about" title="About" />
             <MenuItem number={"02"} link="#experience" title="Experience" />
             <MenuItem number={"03"} link="#projects" title="Projects" />
-            <MenuItem number={"04"} link="#involvements" title="Involvements" />
-            <MenuItem number={"05"} link="#news" title="News" />
-            <MenuItem number={"06"} link="#contact" title="Contact" />
+            {/* <MenuItem number={"04"} link="#involvements" title="Involvements" /> */}
+            <MenuItem number={"04"} link="#news" title="News" />
+            <MenuItem number={"05"} link="#contact" title="Contact" />
         </StyledDiv>
     );
 };
