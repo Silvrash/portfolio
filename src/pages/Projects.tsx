@@ -8,7 +8,7 @@ import {
     AppearReveal,
     FadeReveal,
     PopFromLeftReveal,
-    PopFromRightReveal
+    PopFromRightReveal,
 } from "../components/Reveal";
 import Section from "../components/Section";
 import data from "../data";
@@ -102,14 +102,16 @@ const NoteworthyProject: React.FC<NoteworthyProjectProps> = ({ title, desc, skil
         <AppearReveal className={`card`} onClick={openInNewTab}>
             <div className="row">
                 <FolderIcon width={toDesignRatio(40)} height={toDesignRatio(40)} />
-                <div className="title">{title}</div>
-                <a href={link} className="link">
-                    <LinkIcon
-                        color="#64D0FF"
-                        width={toDesignRatio(10)}
-                        height={toDesignRatio(10)}
-                    />
-                </a>
+                <div className="title">
+                    {title}
+                    <a href={link} className="link">
+                        <LinkIcon
+                            color="#64D0FF"
+                            width={toDesignRatio(10)}
+                            height={toDesignRatio(10)}
+                        />
+                    </a>
+                </div>
             </div>
             <div className="desc">{desc}</div>
             <div className="skills row">
@@ -288,6 +290,10 @@ const StyledDiv = styled(Center)`
         margin-right: 0;
     }
 
+    .skills.row {
+        justify-content: flex-start;
+    }
+
     .skills {
         @media (max-width: 912px) {
             flex-wrap: wrap;
@@ -398,9 +404,15 @@ const StyledDiv = styled(Center)`
                 justify-content: center;
                 border-radius: 4px;
             }
+            .title{
+                position: relative;
+            }
             .link {
-                margin-top: -8px;
+                align-self: flex-start;
                 margin-left: 0.5rem;
+                position: absolute;
+                top: -70%;
+            
             }
         }
     }

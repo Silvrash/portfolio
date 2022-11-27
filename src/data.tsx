@@ -192,13 +192,13 @@ const data = {
                 link: "https://play.google.com/store/apps/details?id=com.arkdevs.jaatech.idoc",
             },
             {
-                title: "Project Aquanaut",
+                title: "Aquanaut",
                 desc: "A Data Analytics Platform and sensor node for leakage detection and management in water distribution networks.",
                 skills: ["Typescript", "Javascript", "NodeJS", "ReactJS", "Python", "Flask"],
                 link: "https://aquanaut.netlify.com/",
             },
             {
-                title: "Project BlackBook",
+                title: "BlackBook",
                 desc: "A contractor-based contact application for finding the right contractors for the right job.",
                 skills: ["Dart", "Flutter", "Python", "Flask"],
                 link: "https://play.google.com/store/apps/details?id=com.nyeova.projectaid.blackbook",
