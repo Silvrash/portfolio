@@ -1,16 +1,14 @@
 import React, { Children, useState } from "react";
 import styled from "styled-components";
 import { ReactComponent as CaretRight } from "../assets/caret-right.svg";
-import { FadeReveal } from "../components/Reveal";
 import { ShowMore } from "../components/Buttons";
 import Center from "../components/Center";
+import { FadeReveal } from "../components/Reveal";
 import Section from "../components/Section";
 import data from "../data";
 import { toDesignRatio } from "../utilities";
 
 const Experience: React.FC = () => {
-    const [showMore, setShowMore] = useState(false);
-
     const [activeIndex, setActiveIndex] = useState(0);
 
     const activeExperience = data.experience[activeIndex];
@@ -27,7 +25,7 @@ const Experience: React.FC = () => {
 
     return (
         <StyledDiv id="experience">
-            <FadeReveal onAnimationEnd={() => setShowMore(false)}>
+            <FadeReveal>
                 <Section number="02." title="Professional Experience" />
 
                 <div className="row">
@@ -83,7 +81,7 @@ const Experience: React.FC = () => {
                                 )}
                             </div>
 
-                            <div className="mobile desc" style={{marginTop: '1rem'}}>
+                            <div className="mobile desc" style={{ marginTop: "1rem" }}>
                                 <ShowMore onClick={prev} style={{ width: 70 }}>
                                     Previous
                                 </ShowMore>

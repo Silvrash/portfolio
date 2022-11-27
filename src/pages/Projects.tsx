@@ -1,24 +1,19 @@
-import React, { Children, useEffect, useState } from "react";
+import React, { Children, useState } from "react";
 import styled from "styled-components";
-import Center from "../components/Center";
-import Section from "../components/Section";
-import { toDesignRatio } from "../utilities";
-import PigeonUltra from "../assets/pigeonultra.png";
-import Omniscio from "../assets/omniscio.png";
-import PMT from "../assets/pmt.png";
-import { ReactComponent as LinkIcon } from "../assets/link.svg";
 import { ReactComponent as FolderIcon } from "../assets/folder.svg";
+import { ReactComponent as LinkIcon } from "../assets/link.svg";
 import { ShowMore } from "../components/Buttons";
-import data from "../data";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import Center from "../components/Center";
 import {
     AppearReveal,
     FadeReveal,
     PopFromLeftReveal,
-    PopFromRightReveal,
+    PopFromRightReveal
 } from "../components/Reveal";
+import Section from "../components/Section";
+import data from "../data";
 import useMediaQuery from "../hooks/useMediaQuery";
+import { toDesignRatio } from "../utilities";
 
 interface ProjectProps {
     title: string;

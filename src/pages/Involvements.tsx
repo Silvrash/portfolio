@@ -1,14 +1,12 @@
-import React, { Children, useEffect } from "react";
+import React, { Children } from "react";
 import styled from "styled-components";
-import Center from "../components/Center";
-import Section from "../components/Section";
 import InvolvementPic from "../assets/involvement1.png";
-import { toDesignRatio } from "../utilities";
 import { ShowMore } from "../components/Buttons";
+import Center from "../components/Center";
+import { AppearReveal, FadeReveal } from "../components/Reveal";
+import Section from "../components/Section";
 import data from "../data";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import  {AppearReveal, FadeReveal } from "../components/Reveal";
+import { toDesignRatio } from "../utilities";
 
 interface InvolvementProps {
     name: string;

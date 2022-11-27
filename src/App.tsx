@@ -1,20 +1,19 @@
+import { useEffect, useState } from "react";
 import styled from "styled-components";
+import { ReactComponent as Hamburger } from "./assets/hamburger.svg";
+import { ReactComponent as Logo } from "./assets/logo.svg";
+import Header from "./components/Header";
+import { FadeReveal } from "./components/Reveal";
+import useMediaQuery from "./hooks/useMediaQuery";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Experience from "./pages/Experience";
-import Involvements from "./pages/Involvements";
 import Landing from "./pages/Landing";
+import Loader from "./pages/Loader";
 import News from "./pages/News";
 import Projects from "./pages/Projects";
 import Social from "./pages/Social";
 import { toDesignRatio } from "./utilities";
-import { ReactComponent as Logo } from "./assets/logo.svg";
-import { ReactComponent as Hamburger } from "./assets/hamburger.svg";
-import Header from "./components/Header";
-import { useEffect, useState } from "react";
-import Loader from "./pages/Loader";
-import { FadeReveal } from "./components/Reveal";
-import useMediaQuery from "./hooks/useMediaQuery";
 
 function App() {
     const [loading, setLoading] = useState(true);

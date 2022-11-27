@@ -1,14 +1,11 @@
-import React, { Children, useEffect } from "react";
+import React, { Children } from "react";
 import styled from "styled-components";
-import Center from "../components/Center";
-import Section from "../components/Section";
-import { toDesignRatio } from "../utilities";
 import { ReactComponent as LinkIcon } from "../assets/link.svg";
-import TJF from "../assets/tjf.png";
-import data from "../data";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import Center from "../components/Center";
 import { AppearReveal, FadeReveal } from "../components/Reveal";
+import Section from "../components/Section";
+import data from "../data";
+import { toDesignRatio } from "../utilities";
 
 interface NewsItemProps {
     title: string;

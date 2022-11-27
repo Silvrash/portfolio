@@ -1,10 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { ReactComponent as Logo } from "../assets/logo.svg";
-import { FadeReveal } from "../components/Reveal";
 import { ShowMore } from "../components/Buttons";
+import { FadeReveal } from "../components/Reveal";
 
-import Header from "../components/Header";
 import data from "../data";
 import { toDesignRatio } from "../utilities";
 

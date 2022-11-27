@@ -1,6 +1,5 @@
-import styled from "styled-components";
 import React from "react";
-import { toDesignRatio } from "../utilities";
+import styled from "styled-components";
 
 interface Props extends React.PropsWithChildren {
     id?: string;
