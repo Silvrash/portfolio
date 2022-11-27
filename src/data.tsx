@@ -14,7 +14,7 @@ const data = {
         <>
             High-level software engineer with innovative and well designed models in the software
             development arena. Committed to meeting project milestones in a timely fashion. Loves{" "}
-            <span>architecting codebases</span> and <span>code optimizations</span>.
+            <span>architecting codebases</span> and <span>code optimizations</span>
         </>
     ),
     resumeLink: "https://github.com/Silvrash/cv/raw/main/example/cv.pdf",
